@@ -1,0 +1,25 @@
+% latex table generated in R 3.1.1 by xtable 1.7-3 package
+% Fri Dec 19 21:41:26 2014
+\begin{table}[ht]
+\centering
+\caption{Parameter estimates for scale accelerated failure time model. Note that we centered the LAS score at 30 and recipient age at the average age of patients in the same native disease group, 2-year center volume at 50, and other characteristics as indicated in the chart below. 
+Therefore, the interpretation of the intercept terms is the effect of transplantation at these reference levels.} 
+\begin{tabular}{l|cccc}
+  \hline
+ & Estimate & StdError & exp(Estimate) & Z-score \\ 
+  \hline
+Intercept & 0.17385 & 2.41280 & 1.190 & 0.72 \\ 
+  Single Lung & 0.14173 & 0.45569 & 1.152 & 1.56 \\ 
+  LAS & -0.09785 & 0.01119 & 0.907 & -8.74 \\ 
+  LAS Squarred & 0.00051 & 0.00018 & 1.001 & 2.90 \\ 
+  Group A (ref: Group D) & 0.26975 & 0.18749 & 1.310 & 1.44 \\ 
+  Group B (ref: Group D) & 0.32695 & 0.48581 & 1.387 & 0.67 \\ 
+  Group C (ref: Group D) & -0.15495 & 0.19333 & 0.856 & -0.80 \\ 
+  Age Recipient (per 5 year increase) & -0.01833 & 0.00666 & 0.982 & -2.75 \\ 
+  Age Donor (>55) & 0.22773 & 0.07591 & 1.256 & 3.00 \\ 
+  Cigarette Donor & 0.66599 & 0.05321 & 1.946 & 2.50 \\ 
+  2 year Center Volume (per 10 increase) & -0.00476 & 0.00198 & 0.995 & -2.41 \\ 
+  Size Difference (per 5 cm increase) & 0.02640 & 0.08111 & 1.027 & 1.63 \\ 
+   \hline
+\end{tabular}
+\end{table}
