@@ -191,6 +191,30 @@ include.rownames=TRUE,append=TRUE,caption.placement="top", sanitize.text.functio
 file="results/NSAFTM_results_r2.txt"
 )
 
+######################################################################
+######################################################################
+### Plot relative survival benefit by LAS among those transplanted
+######################################################################
+######################################################################
+
+rsb_1yr <- 1/(exp(LC_END_MATCH_LAS.T)*exp(LC_END_MATCH_LAS.1.T)*exp((LC_END_MATCH_LAS.2.T[1])*365/(365+180)))
+rsb_2yr <- 1/(exp(LC_END_MATCH_LAS.T)*exp(LC_END_MATCH_LAS.1.T)*exp((LC_END_MATCH_LAS.2.T)*730/(730+180)))
+rsb_3yr <- 1/(exp(LC_END_MATCH_LAS.T)*exp(LC_END_MATCH_LAS.1.T)*exp((LC_END_MATCH_LAS.2.T)*1095/(1095+180)))
+
+
+n.trans <- length(END_MATCH_LAS.T)
+rsb_data <- cbind(c(rsb_1yr, rsb_2yr, rsb_3yr), rep(END_MATCH_LAS.T, 3))
+rsb_data <- as.data.frame(rsb_data)
+rsb_data$Year <- c(rep("1-Year", n.trans), rep("2-Year", n.trans), rep("3-Year", n.trans))
+colnames(rsb_data) <- c("SurvBen", "LAS_T", "Year")
+pdf("graphics/trt_effect_LAS_rsb.pdf",width=10,height=6)
+xyplot(log(SurvBen) ~ LAS_T |Year, data = rsb_data, xlab = "LAS at Transplantation", ylab = "log(Relative Survival Benefit)", layout = c(3,1))
+dev.off()
+#xyplot(log(SurvBen) ~ LAS_T |Year, data = rsb_data, panel = panel.hexbinplot)
+
+cor(END_MATCH_LAS.T, log(rsb_1yr), method="spearman")
+cor(END_MATCH_LAS.T, log(rsb_2yr), method="spearman")
+cor(END_MATCH_LAS.T, log(rsb_3yr), method="spearman")
 
 #######################################################################
 #######################################################################

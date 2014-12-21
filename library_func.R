@@ -5,6 +5,8 @@
 library(xtable)
 library(survival)
 library(data.table)
+library(lattice)
+library(hexbin)
 
 ######################################
 ### functions used during the optimization
