@@ -179,5 +179,5 @@ X.ALT.CONST <- X.ALT[,-change.comp]
 LAS.seq <- seq(from=30,to=70,by=5)
 LAS.seq.p <-LAS.seq+delta.use
 
-X.matrix.followup <- cbind(1,0,(LAS.seq-30),(LAS.seq-30)^2,0,0,0,0,0,0,0,0,0,0)
-X.matrix.followup.p <- cbind(1,0,(LAS.seq.p-30),(LAS.seq.p-30)^2,0,0,0,0,0,0,0,0,0,0)
+X.matrix.followup <- cbind(1,0,(LAS.seq-30),(LAS.seq-30)^2,0,0,0,0,0,0,0,0)
+X.matrix.followup.p <- cbind(1,0,(LAS.seq.p-30),(LAS.seq.p-30)^2,0,0,0,0,0,0,0,0)

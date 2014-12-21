@@ -40,14 +40,14 @@ source("code_output/coef_est_SAFTM_streamlined_r2.R")
 eps <- 5
 eps2 <- 5
 
-source("code_output/coef_est_NSAFTM_streamlined_r2_final.R")
+source("code_output/coef_est_NSAFTM.R")
 
 proc.time()-start_overall
 ###################
 ### output tables and graphics of model 
 ###################
 
-source("code_output/model_output_graphics_streamlined_r2.R")
+source("code_output/model_output_graphics.R")
 
 ###################
 ### model diagnostics 

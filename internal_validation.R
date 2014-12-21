@@ -38,6 +38,10 @@ TEST1 <- ifelse(POT_CENSOR_1 < POT_CENSOR_C & EVENT_INDICATOR_USE==0,1,0)
 
 pdf("graphics/internal_validation.pdf",width=10,height=6)
 
+LAS.lower <- c(0,32.5,35,40,45,50)
+LAS.upper <- c(32.5,35,40,45,50,60)
+LAS.mean <- c(31.25,33.75,37.5,42.5,47.5,55)
+
 par(mfrow=c(2,3))
 for (j in 1:6) {
 X.matrix.plus <- cbind(1,0,(LAS.mean[j]+5-30),(LAS.mean[j]+5-30)^2,0,0,0,0,0,0,0,0)
