@@ -1,0 +1,98 @@
+% latex table generated in R 3.1.1 by xtable 1.7-3 package
+% Sat Dec 20 16:49:37 2014
+\begin{table}[ht]
+\centering
+\caption{Parameter estimates for structural nested accelerated failure time model. Note that we centered the continuous
+covariates at the median value and categorical covariates at the most common value among transplant recipients given in Table 1. Therefore, 
+the interpretation of the intercept terms is the effect of transplantation at these reference levels.
+} 
+\begin{tabular}{l|cccccc}
+  \hline
+ & Estimate & StdError & exp(Estimate) & Lower CI & Upper CI & p-value \\ 
+  \hline
+Intercept Bilateral Early & 1.07401 & 0.13780 & 2.927 & 2.234 & 3.835 & 0.000 \\ 
+  Intercept Bilateral Late & -0.97641 & 0.10723 & 0.377 & 0.305 & 0.465 & 0.000 \\ 
+  Intercept Single Early & 0.96891 & 0.13251 & 2.635 & 2.032 & 3.417 & 0.000 \\ 
+  Intercept Single Late & -0.81023 & 0.10705 & 0.445 & 0.361 & 0.549 & 0.000 \\ 
+  LAS & -0.08961 & 0.00427 & 0.914 & 0.907 & 0.922 & 0.000 \\ 
+  LAS Squarred & 0.00048 & 0.00010 & 1.000 & 1.000 & 1.001 & 0.000 \\ 
+  Group A (ref: Group D) & 0.30605 & 0.17359 & 1.358 & 0.966 & 1.908 & 0.078 \\ 
+  Group B (ref: Group D) & -0.12319 & 0.25708 & 0.884 & 0.534 & 1.463 & 0.632 \\ 
+  Group C (ref: Group D) & -0.62294 & 0.18434 & 0.536 & 0.374 & 0.770 & 0.001 \\ 
+  Age (per 5 increase) & -0.08637 & 0.02581 & 0.917 & 0.872 & 0.965 & 0.001 \\ 
+  Age Donor (>55) & 0.16948 & 0.05985 & 1.185 & 1.054 & 1.332 & 0.005 \\ 
+  Donor Smoking History & 0.14451 & 0.05247 & 1.155 & 1.043 & 1.281 & 0.006 \\ 
+  2 year Center Volume (per 30 increase) & -0.04826 & 0.01986 & 0.953 & 0.916 & 0.991 & 0.015 \\ 
+  Size Difference (per 5 cm increase) & 0.10108 & 0.03670 & 1.106 & 1.030 & 1.189 & 0.006 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+% latex table generated in R 3.1.1 by xtable 1.7-3 package
+% Sat Dec 20 17:18:04 2014
+\begin{table}[ht]
+\centering
+\caption{Percentage of transplants with 1-, 2-, and 3-year survival benefit by patient and donor characteristics.} 
+\begin{tabular}{l|ccc}
+  \hline
+ & 1-year & 2-year & 3-year \\ 
+  \hline
+Overall & 67.6 & 76.5 & 82.0 \\ 
+  Native Disease Grouping &  &  &  \\ 
+  \hspace{1em} Obstructive & 24.7 & 42.0 & 54.8 \\ 
+  \hspace{1em} Vascular & 76.9 & 88.3 & 91.3 \\ 
+  \hspace{1em} Cystic/bronchiestasis & 94.4 & 99.0 & 99.6 \\ 
+  \hspace{1em} Restrictive & 93.0 & 96.4 & 97.8 \\ 
+  LAS at Transplantation &  &  &  \\ 
+  \hspace{1em} 0 - 32.5 & 2.2 & 10.9 & 24.8 \\ 
+  \hspace{1em} 32.5 - 35 & 20.9 & 43.3 & 57.3 \\ 
+  \hspace{1em} 35 - 40 & 74.6 & 88.9 & 94.1 \\ 
+  \hspace{1em} 40 - 45 & 98.9 & 99.9 & 99.9 \\ 
+  \hspace{1em} 45 - 50 & 99.8 & 99.9 & 100.0 \\ 
+  \hspace{1em} 50 - 100 & 100.0 & 100.0 & 100.0 \\ 
+  2-year Center Volume &  &  &  \\ 
+  \hspace{1em} 0 - 25 & 53.6 & 62.6 & 67.6 \\ 
+  \hspace{1em} 25 - 50 & 58.9 & 66.2 & 72.0 \\ 
+  \hspace{1em} 50 - 75 & 65.9 & 73.6 & 79.8 \\ 
+  \hspace{1em} 75 - 100 & 73.8 & 83.7 & 88.8 \\ 
+  \hspace{1em} 100 - 300 & 75.9 & 86.3 & 91.5 \\ 
+  Age Donor &  &  &  \\ 
+  \hspace{1em} $<$55 years & 68.5 & 77.5 & 83.1 \\ 
+  \hspace{1em} $>$55 years & 59.2 & 67.5 & 72.4 \\ 
+  Donor cigarette history &  &  &  \\ 
+  \hspace{1em} $<$20 pack years & 68.8 & 77.8 & 83.1 \\ 
+  \hspace{1em} $>$20 pack years and recent use & 59.0 & 67.5 & 74.1 \\ 
+  Type of Transplant &  &  &  \\ 
+  \hspace{1em} Bilateral Transpalnt & 67.9 & 80.3 & 85.5 \\ 
+  \hspace{1em} Single Transplant & 66.9 & 69.4 & 75.4 \\ 
+  Height Difference (recipient-donor) &  &  &  \\ 
+  \hspace{1em} $<$0 cm & 61.5 & 72.2 & 79.1 \\ 
+  \hspace{1em} 0-5 cm & 72.6 & 80.7 & 85.4 \\ 
+  \hspace{1em} 5-10 cm & 75.8 & 81.4 & 85.0 \\ 
+  \hspace{1em} $>$10 cm & 79.4 & 84.9 & 86.9 \\ 
+   \hline
+\end{tabular}
+\end{table}
+% latex table generated in R 3.1.1 by xtable 1.7-3 package
+% Sat Dec 20 17:21:18 2014
+\begin{table}[ht]
+\centering
+\caption{The initial and long-term ratio of the amount of time a patient would have to remain on the waiting list to observe the same proportion of
+patients dying post-transplantation as a function of LAS at transplantation. In addition, we provide the equity point, the time (years) when the survival proprotion post-transplant
+is equal to the survival proportion among patients remaining on the waiting list. All other covariates were set at the reference level given in Table 1} 
+\begin{tabular}{l|ccc}
+  \hline
+LAS-T & Initial Ratio & Long-term Ratio & Equity Point(years) \\ 
+  \hline
+30 & 6.72 & 0.86 & 6.48 \\ 
+  35 & 4.17 & 0.54 & 1.13 \\ 
+  40 & 2.64 & 0.34 & 0.44 \\ 
+  45 & 1.72 & 0.22 & 0.18 \\ 
+  50 & 1.14 & 0.15 & 0.03 \\ 
+  55 & 0.78 & 0.10 & 0.00 \\ 
+  60 & 0.54 & 0.07 & 0.00 \\ 
+  65 & 0.39 & 0.05 & 0.00 \\ 
+  70 & 0.29 & 0.04 & 0.00 \\ 
+   \hline
+\end{tabular}
+\end{table}

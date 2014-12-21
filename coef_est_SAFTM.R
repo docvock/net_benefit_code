@@ -7,6 +7,7 @@
 
 coef.beta <- matrix(coef.beta.init,ncol=1)
 coef.total.SNAFTM <- coef.beta
+rownames(coef.beta.SNAFTM) <- names.beta.parm
 
 for (q in 1:25) {
 start <- proc.time()
@@ -65,6 +66,7 @@ coef.beta <- -solve(gradient)%*%matrix(estimating.eq,ncol=1)*0.25+coef.beta}
 if(q>20) {
 coef.beta <- -solve(gradient)%*%matrix(estimating.eq,ncol=1)+coef.beta}
 
+rownames(coef.beta) <- names.beta.parm
 print(proc.time()-start)
 
 coef.total.SNAFTM <- cbind(coef.total.SNAFTM,coef.beta)

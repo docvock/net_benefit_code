@@ -131,7 +131,7 @@ names.beta.parm.tv.table <- c("Intercept Bilateral Lung Early", "Intercept Bilat
 	"2 year Center Volume (per 10 increase)", "Size Difference (per 5 cm increase)")
 names.beta.tv.parm <- c("INT_EARLY", "Single_LTX_EARLY", "INT_DIFF", "Single_LTX_DIFF", "LAS","LAS_SQ",
 	"GROUP_A", "GROUP_B", "GROUP_C", "AGE", "AGE_DON", "CIG_DON", "CENTER_VOL", "HEIGHT_DIFF")
-mult.beta.parm <- c(1,1,1,1,1,1,1,1,1,5,1,1,10,5)
+mult.beta.parm.tv <- c(1,1,1,1,1,1,1,1,1,5,1,1,10,5)
 
 names.gamma.parm.table <- c("Intercept","LAS","LAS Squared","Group A","Group B","Group C",
 	"Age","Center Volume")
